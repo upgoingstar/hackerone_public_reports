@@ -29,8 +29,8 @@ def find_latest_id(url):
 	except:
 		pass
 
-cellwriter = csv.writer(open('eggs.csv', 'w'))
-for x in xrange(1,171):
+cellwriter = csv.writer(open('HackeronPublicReports.csv', 'w'))
+for x in xrange(1,3):
 	url = "https://hackerone.com/hacktivity?page=" + str(x)
 	find_latest_id(url)
 	print "Checking on " + url
